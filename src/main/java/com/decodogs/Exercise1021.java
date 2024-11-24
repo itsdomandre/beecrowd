@@ -14,47 +14,47 @@ public class Exercise1021 {
 
         Scanner reader = new Scanner(System.in);
 
-        double value = reader.nextDouble(); // 587
-        double rest = value; // rest = 588.73
-        double notas100 = rest / 100; // 5
-        rest = rest % 100; // 87
-        double notas50 = rest / 50; // 1
-        rest = rest % 50; // 37
+        double value = reader.nextDouble();
+        double rest = value;
+        double notas100 = rest / 100;
+        rest = rest % 100;
+        double notas50 = rest / 50;
+        rest = rest % 50;
         double notas20 = rest / 20;
-        rest = rest % 20; // 18
+        rest = rest % 20;
         double notas10 = rest / 10;
-        rest = rest % 10; // 8
+        rest = rest % 10;
         double notas5 = rest / 5;
-        rest = rest % 5; // 3
+        rest = rest % 5;
         double notas2 = rest / 2;
-        rest = rest % 2; // 1
-        double coin1 = rest / 1;
-        rest = rest % 1;
-        double coin050 = rest / 0.50;
-        rest = rest % 0.50;
-        double coin025 = rest / 0.25;
-        rest = rest % 0.25;
-        double coin010 = rest / 0.10;
-        rest = rest % 0.10;
-        double coin005 = rest / 0.05;
-        rest = rest % 0.05;
-        double coin001 = rest / 0.01;
-        rest = rest % 0.01;
+        rest = rest % 2;
+        int cents = (int) Math.round(rest * 100);
+        int coin1 = cents / 100;
+        cents = cents % 100;
+        int coin050 = cents / 50;
+        cents = cents % 50;
+        int coin025 = cents / 25;
+        cents = cents % 25;
+        int coin010 = cents / 10;
+        cents = cents % 10;
+        int coin005 = cents / 5;
+        cents = cents    % 5;
+        int coin001 = cents;
 
         System.out.println("NOTAS:");
-        System.out.println((int) notas100 + " nota(s) de 100.00");
-        System.out.println((int) notas50 + " nota(s) de 50.00");
-        System.out.println((int) notas20 + " nota(s) de 20.00");
-        System.out.println((int) notas10 + " nota(s) de 10.00");
-        System.out.println((int) notas5 + " nota(s) de 5.00");
-        System.out.println((int) notas2 + " nota(s) de 2.00");
+        System.out.println((int) notas100 + " nota(s) de R$ 100.00");
+        System.out.println((int) notas50 + " nota(s) de R$ 50.00");
+        System.out.println((int) notas20 + " nota(s) de R$ 20.00");
+        System.out.println((int) notas10 + " nota(s) de R$ 10.00");
+        System.out.println((int) notas5 + " nota(s) de R$ 5.00");
+        System.out.println((int) notas2 + " nota(s) de R$ 2.00");
         System.out.println("MOEDAS:");
-        System.out.println((int)coin1 + " moeda(s) de 1.00");
-        System.out.println((int)coin050 + " moeda(s) de 0.50");
-        System.out.println((int)coin025 + " moeda(s) de 0.25");
-        System.out.println((int)coin010 + " moeda(s) de 0.10");
-        System.out.println((int)coin005 + " moeda(s) de 0.05");
-        System.out.println((int)coin001 + " moeda(s) de 0.01");
+        System.out.println((int)coin1 + " moeda(s) de R$ 1.00");
+        System.out.println((int)coin050 + " moeda(s) de R$ 0.50");
+        System.out.println((int)coin025 + " moeda(s) de R$ 0.25");
+        System.out.println((int)coin010 + " moeda(s) de R$ 0.10");
+        System.out.println((int)coin005 + " moeda(s) de R$ 0.05");
+        System.out.println((int)coin001 + " moeda(s) de R$ 0.01");
 
     }
 }
