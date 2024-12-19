@@ -1,3 +1,4 @@
+package com.decodogs;
 import java.io.IOException;
  
 public class Exercise1059 {

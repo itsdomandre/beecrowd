@@ -2,7 +2,7 @@ package com.decodogs;
 
 import java.util.Scanner;
 
-public class Main {
+public class Exercise1048 {
     public static void main(String[] args) {
 
         Scanner reader = new Scanner(System.in);
